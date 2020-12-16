@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "tAFYatJk04L2V17jb2tAJULJyectHh3pVNgDhtChJbeW549ip8QJYdcGKLa+3hbdd7PUFhu5BJF66YKugu9xDA==",
+  "success": true,
+  "projectFilePath": "D:\\training\\dotnet\\approval-tests-dot-net\\ApprovalTesting\\ApprovalTests\\Hangman\\Hangman.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\919842\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\919842\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

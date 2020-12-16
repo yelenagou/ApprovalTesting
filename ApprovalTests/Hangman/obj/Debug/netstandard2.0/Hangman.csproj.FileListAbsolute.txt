@@ -1,0 +1,9 @@
+D:\training\dotnet\approval-tests-dot-net\ApprovalTesting\ApprovalTests\Hangman\bin\Debug\netstandard2.0\Hangman.deps.json
+D:\training\dotnet\approval-tests-dot-net\ApprovalTesting\ApprovalTests\Hangman\bin\Debug\netstandard2.0\Hangman.dll
+D:\training\dotnet\approval-tests-dot-net\ApprovalTesting\ApprovalTests\Hangman\bin\Debug\netstandard2.0\Hangman.pdb
+D:\training\dotnet\approval-tests-dot-net\ApprovalTesting\ApprovalTests\Hangman\obj\Debug\netstandard2.0\Hangman.csprojAssemblyReference.cache
+D:\training\dotnet\approval-tests-dot-net\ApprovalTesting\ApprovalTests\Hangman\obj\Debug\netstandard2.0\Hangman.AssemblyInfoInputs.cache
+D:\training\dotnet\approval-tests-dot-net\ApprovalTesting\ApprovalTests\Hangman\obj\Debug\netstandard2.0\Hangman.AssemblyInfo.cs
+D:\training\dotnet\approval-tests-dot-net\ApprovalTesting\ApprovalTests\Hangman\obj\Debug\netstandard2.0\Hangman.csproj.CoreCompileInputs.cache
+D:\training\dotnet\approval-tests-dot-net\ApprovalTesting\ApprovalTests\Hangman\obj\Debug\netstandard2.0\Hangman.dll
+D:\training\dotnet\approval-tests-dot-net\ApprovalTesting\ApprovalTests\Hangman\obj\Debug\netstandard2.0\Hangman.pdb
