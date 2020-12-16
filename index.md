@@ -42,6 +42,30 @@ sut.CreateBmpFile(Colors.Red, @"C:\temp\redtest.bmp");
 // 2. If image is correct, "approve" it
 // 3. "Approved" image will be used for all future test runs
 ```
+
+### The difference between traditional asserts and approval tests
+#### Traditional Asserts
+* Simple output
+  E.g. ints, doubles, strings
+* Absolute correctness
+* Micro level / multiple low-level asserts
+* More lines of test code
+* “Visualize” only one failing assert
+at a time
+* Up-front decision of correctness
+* Expected result stated in test code
+
+### Approval Tests
+* Complex output
+  E.g. arrays, images, WAV, UI rendering
+* Heuristic correctness (human intelligence)
+* Macro level / one single “assert”
+* Fewer lines of test code
+* Visualize entire result at once
+  (e.g. diff tool)
+* Later decision of correctness
+* Expected result in an “approved” file
+
 [Approval Tests Java Library](https://github.com/approvals/ApprovalTests.Java)
 
 [Approval Tests Node JS](https://github.com/approvals/Approvals.NodeJS)
