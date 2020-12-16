@@ -33,4 +33,4 @@ sut.CreateBmpFile(Colors.Red, @"C:\temp\redtest.bmp");
 // 2. If image is correct, "approve" it
 // 3. "Approved" image will be used for all future test runs
 ```
-
+[CustomObjects Example](https://github.com/yelenagou/ApprovalTesting/tree/main/CustomObjects)
