@@ -4,15 +4,17 @@
 
 Approval Testing are an open source set of libraries that are  used when verifying complex objects that require human review and approval before they can become an expected result. 
 When it would take four of five `Assert` statements to validate a single object, Approval testing can verify an entire object with one `Verify` statement.
+
 ## Why use approval tests?
 
 * Assert on complex output with fewer lines of code
 * Utilize human judgement/intelligence
 * Start testing legacy code more easily
 * Facilitate customer/stakeholder collaboration in testing
+
 For example:
 
-Wwe'll take this test in the arrange phase. We're creating an instance of the thing we want to test, in this case a SolidColorBmpGenerator. In the act phase, we call CreateBmpFile, tell it to create a solid bitmap with the color red, and to output the bitmap file in the temp directory. In the assert phase, we need to read in this file and check that it's red. So, for example, we'd have to read in the bitmap file. And then for every pixel in the bitmap, we'd have to decode the pixel to get the red, green, blue values and then compare the pixel to the RGB values for red. If any of the pixel values don't match, then we'd have to fail the test.
+We'll take this test in the arrange phase. We're creating an instance of the thing we want to test, in this case a SolidColorBmpGenerator. In the act phase, we call CreateBmpFile, tell it to create a solid bitmap with the color red, and to output the bitmap file in the temp directory. In the assert phase, we need to read in this file and check that it's red. So, for example, we'd have to read in the bitmap file. And then for every pixel in the bitmap, we'd have to decode the pixel to get the red, green, blue values and then compare the pixel to the RGB values for red. If any of the pixel values don't match, then we'd have to fail the test.
 
 ```C#
 //Arrange Phase
