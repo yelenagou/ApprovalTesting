@@ -55,6 +55,13 @@ public override string ToString()
 ```
 
 * So now when we call the `Approvals.Verify(sut);` we will call the overridden `.ToString()` method
+* When we run again a compare app opens with approved and recieved files
+* Test fails because they do not match, but notice that in the recieved file we have a result of an overriden `.toString()` method
+
+So if the result in the recieved file looks good, we can go and approve it by renaming the `*.received.txt` file to approved.
+Next time we run the test, test passes because both file matches. 
+
+
 
 
 
