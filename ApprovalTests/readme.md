@@ -35,6 +35,7 @@ we'll call the static Verify method on the Approvals class, and we'll start off 
 `Approvals.Verify(sut);`
 
 * When we run the test for the first time it will fail because we need to add `[UseReporter(typeof(DiffReporter))]` before the test method to invoke the diff reporter
+  ![alt text](https://github.com/yelenagou/ApprovalTesting/blob/gh-pages/root/img/UseReporterHeader.png?raw=true)
 * Second time we run, the test should fail because approved file does not match the recieved file, as it should
 * By default the `GameEngine` runs a .toString() method on everything we pass it so an entire object is being outputted 
 * We can override the .toString() method in the GameEngine to fix that issue
