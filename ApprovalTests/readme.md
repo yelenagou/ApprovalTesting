@@ -1,4 +1,5 @@
 ### Add Approval Tests for Complex Objects
+* clone [ApprovalTesting repo](https://github.com/yelenagou/ApprovalTesting.git) to get an initial state of the project
 
 In this project we have a class called a GameEngine
 
