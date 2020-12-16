@@ -1,3 +1,10 @@
+### Why use approval tests?
+
+* Assert on complex output with fewer lines of code
+* Utilize human judgement/intelligence
+* Start testing legacy code more easily
+* Facilitate customer/stakeholder collaboration in testing
+
 ## What is Approval Testing
 
 Approval Testing are an open source set of libraries that are  used when verifying complex objects that require human review and approval before they can become an expected result. 
@@ -33,4 +40,6 @@ sut.CreateBmpFile(Colors.Red, @"C:\temp\redtest.bmp");
 // 2. If image is correct, "approve" it
 // 3. "Approved" image will be used for all future test runs
 ```
+
+
 [CustomObjects Example](https://github.com/yelenagou/ApprovalTesting/tree/main/CustomObjects)
