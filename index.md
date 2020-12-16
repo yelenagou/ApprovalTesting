@@ -1,4 +1,24 @@
-## Welcome to GitHub Pages
+## What is Approval Testing
+
+Approval Testing is used when verifying complex objects that require human review and approval before they can become an expected result. 
+When it would take four of five `Assert` statements to validate a single object, Approval testing can verify an entire object with one `Verify` statement.
+
+For example:
+```C#
+//Arrange Phase
+var sut = new SolidColorBmpGenerator():
+
+//Act Phase
+sut.CreateBmpFile(Colors.Red, @"C:\temp\retest.bmp);
+
+
+// Assert Phase
+// 1. Read C:\temp\redtest.bmp
+// 2. For every pixel in the bitmap
+// 2a. Decode pixel to get RGB values
+// 2b. Compare pixel to RGB values for red
+// 2c. If pixel value not red then fail the test
+```
 
 You can use the [editor on GitHub](https://github.com/yelenagou/ApprovalTesting/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
