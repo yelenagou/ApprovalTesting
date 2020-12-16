@@ -1,0 +1,3 @@
+Guessed letters: XPE
+Guessed remaining: 9
+---EP----E

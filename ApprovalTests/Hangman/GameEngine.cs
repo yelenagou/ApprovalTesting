@@ -54,9 +54,20 @@ namespace Hangman
             }
         }
 
+		public override string ToString()
+		{
+            var sb = new StringBuilder();
+            sb.AppendFormat("Guessed letters: {0}", new string(GuessedLetters.ToArray()));
+            sb.AppendLine();
 
-        #region helper code
-        private static char ToUpperChar(char letter)
+            sb.AppendFormat("Guessed remaining: {0}", GuessesRemaining);
+            sb.AppendLine();
+
+            sb.Append(RevealedWord);
+			return sb.ToString();
+		}
+		#region helper code
+		private static char ToUpperChar(char letter)
         {
             return letter.ToString(CultureInfo.InvariantCulture).ToUpperInvariant().ToCharArray()[0];
         }
