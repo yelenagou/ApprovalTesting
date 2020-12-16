@@ -66,8 +66,10 @@ at a time
 * Later decision of correctness
 * Expected result in an “approved” file
 
-An approval test is added to an existing test execution framework such as TestNg, JUnit, xUnit, MsTest, Karma, etc.
+An approval test is added to an existing test execution framework such as TestNg, JUnit, xUnit, MsTest, Karma, etc..
+
 Here is an exercise to add an approval test for a complex object:
+
 [Approval Test For Custom Objects](https://github.com/yelenagou/ApprovalTesting/tree/CustomObjects/ApprovalTests)
 
 [Approval Tests Java Library](https://github.com/approvals/ApprovalTests.Java)
