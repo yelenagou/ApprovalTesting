@@ -1,4 +1,4 @@
-### Why use approval tests?
+## Why use approval tests?
 
 * Assert on complex output with fewer lines of code
 * Utilize human judgement/intelligence
