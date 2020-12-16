@@ -42,6 +42,8 @@ sut.CreateBmpFile(Colors.Red, @"C:\temp\redtest.bmp");
 // 2. If image is correct, "approve" it
 // 3. "Approved" image will be used for all future test runs
 ```
+[Approval Tests Java Library](https://github.com/approvals/ApprovalTests.Java)
 
+[Approval Tests Node JS](https://github.com/approvals/Approvals.NodeJS)
 
 [CustomObjects Example](https://github.com/yelenagou/ApprovalTesting/tree/main/CustomObjects)
