@@ -18,6 +18,6 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Hangman\Hangman.csproj" />
+    <ProjectReference Include="..\HRReportGenerator\HRReportGenerator.csproj" />
   </ItemGroup>
 </Project>
