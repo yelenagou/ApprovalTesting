@@ -1,28 +1,44 @@
 # ApprovalTesting
 
-### Scrubbing approved files during execution
+### Reporting Image differences
 
 * For more information go to: https://yelenagou.github.io/ApprovalTesting/
 
-* Open the approved file.
-    - Note there is an arbitrary date that user wants to see. 
-* Update the EmployeeReportGenerator.cs file to match the report
+* The sample program creates an image layout of a report
+* We need to ensure that the image is approved
+  * Add a test method to the `BitmapReportBuilderShould.cs` file:
+  
+  ```C#
+  
+        [Fact]
+        [UseReporter(typeof(FileLauncherReporter), typeof(ClipboardReporter))]
+        public void RenderPNGImage()
+        {
+            var model = new ReportModel
+            {
+                Title = "Annual Report",
+                ReportLines =
+                {
+                    "Line 1",
+                    "Line 2",
+                    "Line 3",
+                    "Line 4",
+                    "Line 5"
+                }
+            };
 
-```C#
-    reportText.AppendLine($"Date Generated: {DateTime.Now:MMMM d, yyyy}");
-    reportText.AppendLine();
+            var sut = new BitmapReportBuilder(model);
+            byte[] bitmap = sut.Render();
+            Approvals.VerifyBinaryFile(bitmap, ".png");
+
+        }
+
 ```
-
-  - Notice that we are using DateTime.Now which would not match the report
-
-- If we run the test, it will fail because dates don't match.
-
-* Use scrubbing feature of approval tests:
-There is an overload to an `Approvals.Verify` function that accepts the input string as it's first parameter and a function that checks the input and replaces it. 
-```C#
-        Approvals.Verify(reportText,
-        (input) => Regex.Replace(input, "Date Generated.*", "Date Generated: July 1, 2000"));
-```
-### Other Verification Methods
-
-
+* We are using File Launcher Reporter for approval 
+* Run the test 
+  * First time the test should fail
+  * Default image program opens
+  * Since we are using ClipboardReporter to manage our approvals, open cmd and paste the command that has been copied to your clipboard during runtime
+    * You will have an approved file
+    * If you run the test again it should pass
+* You can change which report you are going to use
