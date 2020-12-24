@@ -7,11 +7,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A9D31BEC-4197-4684-BB4E-1DB1C5C4C021}</ProjectGuid>
+    <ProjectGuid>{AD17AE6B-57FF-458E-A151-10C3E7DBF8E0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AnnualReportBuilder.Tests</RootNamespace>
-    <AssemblyName>AnnualReportBuilder.Tests</AssemblyName>
+    <RootNamespace>ReportGenerator.Tests</RootNamespace>
+    <AssemblyName>ReportGenerator.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -94,13 +94,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BitmapReportBuilderShould.cs" />
+    <Compile Include="HtmlReportBuilderShould.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AnnualReportBuilder\AnnualReportBuilder.csproj">
-      <Project>{641bad33-85b3-463d-88b5-09327ef47198}</Project>
-      <Name>AnnualReportBuilder</Name>
+    <ProjectReference Include="..\ReportGenerator\ReportGenerator.csproj">
+      <Project>{f81bd028-e391-4b16-b4ef-4222daa721bb}</Project>
+      <Name>ReportGenerator</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -118,11 +118,11 @@
     <Error Condition="!Exists('..\packages\xunit.core.2.4.1\build\xunit.core.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xunit.core.2.4.1\build\xunit.core.props'))" />
     <Error Condition="!Exists('..\packages\xunit.core.2.4.1\build\xunit.core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xunit.core.2.4.1\build\xunit.core.targets'))" />
     <Error Condition="!Exists('..\packages\xunit.runner.visualstudio.2.4.3\build\net452\xunit.runner.visualstudio.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xunit.runner.visualstudio.2.4.3\build\net452\xunit.runner.visualstudio.props'))" />
+    <Error Condition="!Exists('..\packages\EmptyFiles.2.3.3\build\EmptyFiles.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EmptyFiles.2.3.3\build\EmptyFiles.targets'))" />
     <Error Condition="!Exists('..\packages\ApprovalTests.5.4.5\build\ApprovalTests.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\ApprovalTests.5.4.5\build\ApprovalTests.props'))" />
     <Error Condition="!Exists('..\packages\ApprovalTests.5.4.5\build\ApprovalTests.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\ApprovalTests.5.4.5\build\ApprovalTests.targets'))" />
-    <Error Condition="!Exists('..\packages\EmptyFiles.2.3.3\build\EmptyFiles.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EmptyFiles.2.3.3\build\EmptyFiles.targets'))" />
   </Target>
   <Import Project="..\packages\xunit.core.2.4.1\build\xunit.core.targets" Condition="Exists('..\packages\xunit.core.2.4.1\build\xunit.core.targets')" />
-  <Import Project="..\packages\ApprovalTests.5.4.5\build\ApprovalTests.targets" Condition="Exists('..\packages\ApprovalTests.5.4.5\build\ApprovalTests.targets')" />
   <Import Project="..\packages\EmptyFiles.2.3.3\build\EmptyFiles.targets" Condition="Exists('..\packages\EmptyFiles.2.3.3\build\EmptyFiles.targets')" />
+  <Import Project="..\packages\ApprovalTests.5.4.5\build\ApprovalTests.targets" Condition="Exists('..\packages\ApprovalTests.5.4.5\build\ApprovalTests.targets')" />
 </Project>

@@ -1,15 +1,16 @@
-﻿using System.Reflection;
+﻿using ApprovalTests.Reporters;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("AnnualReportBuilder.Tests")]
+[assembly: AssemblyTitle("ReportGenrator.Tests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("AnnualReportBuilder.Tests")]
+[assembly: AssemblyProduct("ReportGenrator.Tests")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +21,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("a9d31bec-4197-4684-bb4e-1db1c5c4c021")]
+[assembly: Guid("ad17ae6b-57ff-458e-a151-10c3e7dbf8e0")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -34,3 +35,4 @@ using System.Runtime.InteropServices;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: FrontLoadedReporter(typeof(DefaultFrontLoaderReporter))]
