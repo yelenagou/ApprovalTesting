@@ -2,14 +2,16 @@
 using Xunit;
 using ApprovalTests;
 using ApprovalTests.Reporters.TestFrameworks;
+using ApprovalTests.Maintenance;
 
 namespace ReportGenerator.Tests
 {
     public class HtmlReportBuilderShould
     {
+       
         [Fact]
-        [UseReporter(typeof(FrameworkAssertReporter))]
-        public void Build()
+        [UseReporter(typeof(WinMergeReporter),typeof(FileLauncherReporter), typeof(ClipboardReporter))]
+        public void BuildAnnualReport()
         {
             var model = new ReportModel
             {

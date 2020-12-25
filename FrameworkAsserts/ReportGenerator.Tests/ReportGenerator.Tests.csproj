@@ -94,6 +94,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApprovalTestsMaintenance.cs" />
     <Compile Include="HtmlReportBuilderShould.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

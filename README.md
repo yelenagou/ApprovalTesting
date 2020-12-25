@@ -1,46 +1,16 @@
 # ApprovalTesting
 
-### Using Framework Reporter
+### Maintaining approval tests
 
-* When running tests on the agent, we do not want to open a compare program
-* We can use default framework reporter to view the images
-* Change the report to either XUnit2Reporter or FrameworkAssertReport
-* When report is ran, default framework reporter will be opened. 
-  
-Make change to the Line 1 string 
-  
-  ```C#
-  
-        public class HtmlReportBuilderShould
-    {
-        [Fact]
-        [UseReporter(typeof(XUnit2Reporter))]
-        public void Build()
-        {
-            var model = new ReportModel
-            {
-                Title = "Annual Report",
-                ReportLines =
-                            {
-                                "Line 1xyz",
-                                "Line 2",
-                                "Line 3",
-                                "Line 4",
-                                "Line 5"
-                            }
-            };
+Often times, once test cases get developed, approval files get out of date.
 
-            var sut = new HtmlReportBuilder(model);
+For example:
 
-            string html = sut.Build();
+In this project you have a test method name ` public void Build()` in the HtmlReportBuilderShould file. 
 
-            Approvals.VerifyHtml(html);
-        }
-    }
+Let's say you renamed the test method to `public void BuildAnnualReport()`;
 
-```
-* When test fail an Xunit reporter will be open
-This type of reporter is not useful for images.
+When you run the tests, you will have two approval files. 
 
-You can set a reporter on method level, test case level, or an assembly level
-[assembly: FrontLoadedReporter(typeof(DefaultFrontLoaderReporter))]
+In order to cleanup unused approval files, you can add a separate test class with a test method that contains `ApprovalMaintenance.VerifyNoAbandonedFiles()` method. 
+This method only needs to run once. 
