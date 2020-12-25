@@ -1,14 +1,15 @@
-# ApprovalTesting
+using ApprovalTests;
+using ApprovalTests.Reporters;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using System;
+using Xunit;
 
-### Approval Tests with Selenium Web Driver
-
-We can use Selenium to render the web page and capture the screenshot to build a recieved 
-
-Run the webapp without debugging and note the URL. 
-
-Add a test method to the test class:
-```C#
-  [Fact]
+namespace WebApplication1.Tests
+{
+    public class HomePageShould
+    {
+        [Fact]
         [UseReporter(typeof(DiffReporter), typeof(ClipboardReporter))]
         public void RenderWithoutError()
         {
@@ -26,6 +27,5 @@ Add a test method to the test class:
 
             }
         }
-```
-
-In the test method above, we take a screenshot with selenium web driver and then compare the screenshot as byte array. 
+    }
+}
